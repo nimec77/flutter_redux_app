@@ -37,7 +37,7 @@ class MainScreen extends StatelessWidget {
           ),
           floatingActionButton: StoreConnector<int, VoidCallback>(
             converter: (store) {
-              return () => store.dispatch(CountActions.increment);
+              return () => store.dispatch(countIncrementAction);
             },
             builder: (context, callback) {
               return FloatingActionButton(
